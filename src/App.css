@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
     margin: 0;
     /* overflow-x: hidden; */
@@ -7,3 +8,12 @@
     background-color: rgb(167, 239, 167);
     padding: 20px 0px;
 }
+=======
+body {
+  background: url("../public/aerial.jpg") repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+>>>>>>> 34b56521112aaf13c1cfdd3ead2304f313a1025d

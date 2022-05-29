@@ -1,8 +1,23 @@
+<<<<<<< HEAD
 import './App.css';
 import axios from 'axios'
 import History from './History';
 import Loader from './Loader';
 
+=======
+import "./App.css";
+import Home from "./Home";
+import Results from "./Results";
+import ResultsHistory from "./ResultsHistory";
+import Header from "./Header";
+import History from "./History";
+import {
+  Route,
+  BrowserRouter as Router,
+  Routes,
+  Redirect,
+} from "react-router-dom";
+>>>>>>> 34b56521112aaf13c1cfdd3ead2304f313a1025d
 function App() {
 
   function postHistory() {
@@ -50,12 +65,22 @@ function App() {
   }
   return (
     <div className="App">
+<<<<<<< HEAD
       {/* <button onClick={postHistory}>Post History</button>
       <button onClick={getHistory}>Get History</button>
       <button onClick={getCure}>Get Cure</button> */}
       {/* <Loader /> */}
 
       <History />
+=======
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/home" element={<Home />} />
+        <Route exact path="/results" element={<Results />} />
+        <Route exact path="/resultshistory" element={<ResultsHistory />} />
+        <Route exact path="/history" element={<History />} />
+      </Routes>
+>>>>>>> 34b56521112aaf13c1cfdd3ead2304f313a1025d
     </div>
   );
 }

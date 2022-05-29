@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .Loader>img {
     width: 200px;
     position: absolute;
@@ -46,3 +47,56 @@
     }
 
 }
+=======
+.Loader {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+}
+.Loader > img {
+  width: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* height: 200px; */
+  animation: popping 0.5s 2s;
+}
+
+.screen {
+  width: 200px;
+  height: 200px;
+  top: 50%;
+  left: 50%;
+  transform: rotate(45deg) translate(-70%, 2%);
+  position: absolute;
+  opacity: 1;
+  background-color: white;
+  animation: animate 2s 1s forwards infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(45deg) translate(-70%, 2%);
+  }
+
+  100% {
+    transform: rotate(45deg) translate(-70%, -150%);
+    display: none;
+  }
+}
+
+@keyframes popping {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  50% {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+>>>>>>> 34b56521112aaf13c1cfdd3ead2304f313a1025d
