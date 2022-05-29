@@ -1,0 +1,43 @@
+.webcam-content {
+  height: 500px;
+  width: 600px;
+  margin-top: -440px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(155, 218, 166, 0.904);
+  z-index: 100;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.webcam {
+  margin-top: 40px;
+  height: 350px;
+  width: 350px;
+  border-radius: 3px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.taken-photo {
+  display: flex;
+  margin-top: 40px;
+  z-index: 100;
+}
+.capture-btn {
+  margin-top: 20px;
+  background-color: #14ac35;
+  color: aliceblue;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  z-index: 100;
+}
+.capture-btn:hover {
+  background-color: #118029;
+}
+.close {
+  margin-left: 560px;
+  margin-top: 10px;
+}
