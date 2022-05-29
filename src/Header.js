@@ -26,12 +26,12 @@ function Header() {
   };
   return (
     <div className="header">
-      <div className="header-title">
-        <Link to="/home">
-          <img src="leaf.svg" width="40px" alt="loading" />
+      <Link to="/home">
+        <div className="header-title">
+          <img src="leaf.svg" width="40px" alt="loading" className="product-logo" />
           <b>Dr. Botany</b>
-        </Link>
-      </div>
+        </div>
+      </Link>
       <div className="user-name">
         {email == null ? (
           <div className="google-btn" onClick={signIn}>

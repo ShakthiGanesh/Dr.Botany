@@ -14,6 +14,7 @@
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
+
 .choose-file {
   background-color: #14ac35;
   color: aliceblue;
@@ -24,6 +25,7 @@
   border-radius: 5px;
   z-index: 100;
 }
+
 .upload-btn {
   margin-left: 50px;
   background-color: #14ac35;
@@ -35,12 +37,15 @@
   border-radius: 5px;
   z-index: 100;
 }
+
 .choose-file:hover {
   background-color: #118029;
 }
+
 .upload-btn:hover {
   background-color: #118029;
 }
+
 .close {
   position: absolute;
   top: 0;
@@ -48,6 +53,7 @@
   padding: 1vw;
   padding-top: 0.1vw;
 }
+
 #blah {
   position: absolute;
   top: 15%;
@@ -57,4 +63,28 @@
   width: 150px;
   height: 150px;
   left: 100;
+}
+
+@media (max-width: 640px) {
+  .from-device {
+    width: 90vw;
+  }
+
+  #imgInp {
+    max-width: 200px;
+    margin: 20px auto;
+    padding: 5px;
+    margin-top: 20px;
+  }
+
+  .upload-btn {
+    display: block;
+    margin: 0;
+    margin: 0 auto;
+  }
+
+  #blah {
+    margin-bottom: 20px !important;
+  }
+
 }

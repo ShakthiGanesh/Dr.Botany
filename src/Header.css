@@ -1,37 +1,81 @@
 .header {
   height: 60px;
-  width: 100%;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: #1b4d25;
   position: sticky;
   top: 0;
+  left: 0;
   z-index: 100;
 }
+
 .google-btn {
   cursor: pointer;
   margin: 1vw;
-  padding-top: 1vw;
+  /* padding-top: 1vw; */
   display: flex;
-  background-color: #;
+  align-items: center;
+  /* background-color: ; */
 }
+
 .google-icon-wrapper {
   padding-right: 1vw;
 }
+
 .header-title {
   font-size: 30px;
   color: rgb(208, 226, 216) !important;
-  width: 200px;
-  margin: 0 40px;
+  /* width: 200px; */
+  margin: auto 40px;
+  display: flex;
+  align-items: center;
 }
-.header-title > a {
+
+.header>a {
   color: rgb(208, 226, 216) !important;
   text-decoration: none !important;
 }
+
 .user-name {
   font-size: medium;
   color: aliceblue;
   font-weight: 500;
   margin-right: 50px;
+}
+
+.btn-text {
+  margin: auto;
+}
+
+
+@media (max-width: 640px) {
+  .header-title {
+    font-size: 17px;
+    margin: 0 10px;
+  }
+
+  .product-logo {
+    height: 30px;
+  }
+
+  .google-icon-wrapper {
+    padding-right: 10px;
+  }
+
+  .btn-text {
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  .user-name {
+    margin-right: 7px;
+  }
+
+  .google-btn {
+    align-items: center;
+  }
+
 }

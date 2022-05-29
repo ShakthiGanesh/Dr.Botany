@@ -1,19 +1,4 @@
 .History {
-<<<<<<< HEAD
-    width: fit-content;
-    margin: auto auto;
-}
-
-.History>h1 {
-    padding: 20px;
-}
-
-@media (max-width: 640px) {
-    .History>h1 {
-        padding: 15px;
-    }
-}
-=======
   width: fit-content;
   margin: auto auto;
   background-color: #fff;
@@ -25,13 +10,12 @@
   border-radius: 15px;
 }
 
-.History > h1 {
+.History>h1 {
   padding: 20px;
 }
 
 @media (max-width: 640px) {
-  .History > h1 {
+  .History>h1 {
     padding: 15px;
   }
 }
->>>>>>> 34b56521112aaf13c1cfdd3ead2304f313a1025d
