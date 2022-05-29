@@ -1,0 +1,21 @@
+.History {
+  width: fit-content;
+  margin: auto auto;
+  background-color: #fff;
+  opacity: 0.8;
+  margin-top: 1vw;
+  padding-right: 0.5vw;
+  padding-left: 0.5vw;
+  padding-bottom: 1vw;
+  border-radius: 15px;
+}
+
+.History > h1 {
+  padding: 20px;
+}
+
+@media (max-width: 640px) {
+  .History > h1 {
+    padding: 15px;
+  }
+}
