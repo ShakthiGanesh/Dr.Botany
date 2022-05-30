@@ -49,7 +49,6 @@
   margin: auto;
 }
 
-
 @media (max-width: 640px) {
   .header-title {
     font-size: 17px;
@@ -77,5 +76,23 @@
   .google-btn {
     align-items: center;
   }
+}
 
+.toggle {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+*/ .MuiAvatar-root {
+  margin-right: 10px;
+}
+
+.user-displayname {
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.user-detail {
+  justify-content: space-evenly;
 }

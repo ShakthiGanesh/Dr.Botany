@@ -3,6 +3,7 @@ import { Modal, Button, Dropdown } from "react-bootstrap";
 import "./Header.css";
 import Loader from "./Loader.js";
 import { Link } from "react-router-dom";
+import { Avatar } from "@material-ui/core";
 import { auth } from "./firebase";
 import { useNavigate } from "react-router-dom";
 import { useStateValue } from "./StateProvider";
@@ -10,7 +11,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 function Header() {
-  const [{ disease, crop, image, Action, email }, dispatch] = useStateValue();
+  const [{ disease, crop, image, Action, email, user }, dispatch] =
+    useStateValue();
   const navigate = useNavigate();
   const signIn = () => {
     const provider = new GoogleAuthProvider();
@@ -21,6 +23,10 @@ function Header() {
           type: "EMAIL",
           email: re.user.email,
         });
+        dispatch({
+          type: "USER",
+          user: re.user,
+        });
       })
       .catch((error) => alert(error.message));
   };
@@ -28,7 +34,7 @@ function Header() {
     <div className="header">
       <Link to="/home">
         <div className="header-title">
-          <img src="leaf.svg" width="40px" alt="loading" className="product-logo" />
+          <img src="leaf.svg" width="40px" alt="loading" />
           <b>Dr. Botany</b>
         </div>
       </Link>
@@ -46,13 +52,15 @@ function Header() {
             </p>
           </div>
         ) : (
-          <Dropdown>
+          <Dropdown className="user-detail">
             <Dropdown.Toggle
               variant="success"
               id="dropdown-basic"
               className="toggle"
             >
-              <FontAwesomeIcon icon={faUser} />
+              {/* <FontAwesomeIcon icon={faUser} /> */}
+              <Avatar src={user?.photoURL} />
+              <p className="user-displayname">{user?.displayName}</p>
             </Dropdown.Toggle>
 
             <Dropdown.Menu>
