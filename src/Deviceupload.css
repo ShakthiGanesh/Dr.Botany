@@ -2,7 +2,9 @@
   height: 500px;
   width: 600px;
   margin-top: -440px;
+  padding-top: 10%;
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: center;
   flex-direction: row;
@@ -40,4 +42,19 @@
   background-color: #118029;
 }
 .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1vw;
+  padding-top: 0.1vw;
+}
+#blah {
+  position: absolute;
+  top: 15%;
+  padding: 1vw;
+  background-color: white;
+  border: 4px solid #14ac35;
+  width: 150px;
+  height: 150px;
+  left: 100;
 }

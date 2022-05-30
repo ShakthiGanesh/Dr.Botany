@@ -8,7 +8,6 @@ export const initialState = {
   single_search: {},
   clickedChannel: null,
   url: null,
-  user: null,
 };
 export const reducer = (state, action) => {
   switch (action.type) {
@@ -68,12 +67,6 @@ export const reducer = (state, action) => {
       return {
         ...state,
         Action: action,
-      };
-    }
-    case "USER": {
-      return {
-        ...state,
-        user: action.user,
       };
     }
   }

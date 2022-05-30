@@ -4,20 +4,49 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #3c4b3e;
+  background-color: #1b4d25;
   position: sticky;
   top: 0;
   z-index: 100;
 }
+.google-btn {
+  cursor: pointer;
+  margin: 1vw;
+  padding-top: 1vw;
+  display: flex;
+  background-color: #;
+}
+.toggle {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+.google-icon-wrapper {
+  padding-right: 1vw;
+}
 .header-title {
   font-size: 30px;
-  color: rgb(208, 226, 216);
-  width: 100px;
+  color: rgb(208, 226, 216) !important;
+  width: 200px;
   margin: 0 40px;
+}
+.header-title > a {
+  color: rgb(208, 226, 216) !important;
+  text-decoration: none !important;
 }
 .user-name {
   font-size: medium;
   color: aliceblue;
   font-weight: 500;
   margin-right: 50px;
+}
+.MuiAvatar-root {
+  margin-right: 10px;
+}
+.user-displayname {
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+.user-detail {
+  justify-content: space-evenly;
 }

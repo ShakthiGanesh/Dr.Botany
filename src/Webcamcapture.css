@@ -3,6 +3,7 @@
   width: 600px;
   margin-top: -440px;
   display: flex;
+  position: relative;
   align-items: center;
   flex-direction: column;
   background-color: rgba(155, 218, 166, 0.904);
@@ -13,8 +14,8 @@
 }
 .webcam {
   margin-top: 40px;
-  height: 350px;
-  width: 350px;
+  height: 256px;
+  width: 256px;
   border-radius: 3px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
