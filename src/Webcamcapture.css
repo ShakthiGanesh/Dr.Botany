@@ -47,7 +47,6 @@
   margin-left: 560px;
   margin-top: 10px;
 }
-
 @media (max-width: 640px) {
   .webcam-content {
     width: 90vw;
