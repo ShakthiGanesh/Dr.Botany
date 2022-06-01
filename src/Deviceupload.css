@@ -62,20 +62,17 @@
   .from-device {
     width: 90vw;
   }
-
   #imgInp {
     max-width: 200px;
     margin: 20px auto;
     padding: 5px;
     margin-top: 20px;
   }
-
   .upload-btn {
     display: block;
     margin: 0;
     margin: 0 auto;
   }
-
   #blah {
     margin-bottom: 20px !important;
   }
